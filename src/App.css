@@ -1,0 +1,171 @@
+html, body{
+	height: 100%;
+}
+
+body{
+  font-family: sans-serif;
+	background: #937ff0; /* Old browsers */
+	background: -moz-linear-gradient(top, #937ff0 1%, #a56bf4 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, #937ff0 1%,#a56bf4 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, #937ff0 1%,#a56bf4 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#937ff0', endColorstr='#a56bf4',GradientType=0 ); /* IE6-9 */
+}
+
+.App{
+	text-align: center;
+	max-width: 1140px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.content-wrapper--login{
+	position: absolute;
+  bottom: 10%;
+  right: 15px;
+  left: 15px;
+  text-align: center;
+  color: #FFF;
+  
+}
+
+.std-btn{
+	width: 100%;
+  max-width: 480px;
+ 	text-align: left;
+  padding-left: 20px;
+  height: 60px;
+  border: 0;
+  font-weight: 700;
+  position: relative;
+}
+
+.std-btn svg{
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+}
+
+.std-btn[disabled]{
+  opacity: 0.5;
+}
+
+.login-title-group{
+	margin-bottom: 60px;
+}
+
+.login-title-group h2{
+	font-size: 32px;
+	margin-bottom: 10px;
+}
+
+.user-img{
+display: inline-block;
+border-radius: 50%;
+width: 50px;
+height: 50px;
+overflow: hidden;
+float: right;
+position: relative;
+top: -8px;
+}
+
+.logged-in-header{
+	text-align: left;
+	padding: 15px;
+  overflow: hidden;
+  color: #fff;
+}
+
+.logged-in-header svg{
+  float: left;
+  margin-right: 15px;
+  position: relative;
+  top: 2px;
+}
+
+.logged-in-header .header-info{
+  float: left;
+}
+
+.search-wrapper{
+  background-color: #f2f6f8;
+  position: absolute;
+  top: 80px;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+.search-wrapper .content{
+  padding: 15px;
+  text-align: left;
+  max-width: 480px;
+  margin-left: auto;
+  margin-right: auto;;
+}
+
+.search-wrapper h3{
+  font-weight: bold;
+}
+
+span.step-number{
+  border: 2px solid #9779f1;
+  color: #9779f1;
+  width: 25px;
+  height: 25px;
+  display: inline-block;
+  text-align: center;
+  padding-top: 3px;
+  box-sizing: border-box;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+input[type="text"]{
+	height: 45px;
+  width: 100%;
+  padding-left: 15px;
+  border: 0;
+  font-size: 21px;
+  color: #626265;
+  box-sizing: border-box;
+}
+
+.search-input{
+  margin-top: 10px;
+  position: relative;
+}
+
+.search-input svg{
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+}
+
+.search-input.loading svg{
+  color: #c7c7c7;
+  animation: App-logo-spin infinite 1s linear;
+}
+
+.search-input.invalid svg{
+  color: #e43232;
+}
+
+.search-input.valid svg{
+  color: #37c31e;
+}
+
+
+
+@keyframes App-logo-spin {
+  from {
+    transform: translate(0, -50%) rotate(0deg);
+  }
+  to {
+    transform:  translate(0, -50%) rotate(360deg);
+  }
+}
